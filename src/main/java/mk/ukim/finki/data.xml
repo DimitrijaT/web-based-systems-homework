@@ -1,0 +1,20 @@
+<rdf:RDF
+        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#"
+        xmlns:j.0="http://xmlns.com/foaf/0.1/">
+    <rdf:Description rdf:about="https://github.com/DimitrijaT">
+        <j.0:birthday>20001129</j.0:birthday>
+        <vcard:ADR>Skopje, Macedonia</vcard:ADR>
+        <vcard:Family>Timeski</vcard:Family>
+        <j.0:givenName>Dimitrija</j.0:givenName>
+        <vcard:Given>Dimitrija</vcard:Given>
+        <vcard:EMAIL>dimitrijatimeskidimitrija@gmail.com</vcard:EMAIL>
+        <j.0:familyName>Timeski</j.0:familyName>
+        <vcard:BDAY>20001129</vcard:BDAY>
+        <j.0:accountName>Dimitrija</j.0:accountName>
+        <j.0:knows rdf:resource="https://github.com/DimeJovanovski"/>
+        <j.0:name>Dimitrija Timeski</j.0:name>
+        <vcard:FN>Dimitrija Timeski</vcard:FN>
+    </rdf:Description>
+</rdf:RDF>
+

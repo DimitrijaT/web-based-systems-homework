@@ -1,0 +1,25 @@
+<https://github.com/DimitrijaT>
+        <http://www.w3.org/2001/vcard-rdf/3.0#ADR>
+                "Skopje, Macedonia";
+        <http://www.w3.org/2001/vcard-rdf/3.0#BDAY>
+                "20001129";
+        <http://www.w3.org/2001/vcard-rdf/3.0#EMAIL>
+                "dimitrijatimeskidimitrija@gmail.com";
+        <http://www.w3.org/2001/vcard-rdf/3.0#FN>
+                "Dimitrija Timeski";
+        <http://www.w3.org/2001/vcard-rdf/3.0#Family>
+                "Timeski";
+        <http://www.w3.org/2001/vcard-rdf/3.0#Given>
+                "Dimitrija";
+        <http://xmlns.com/foaf/0.1/accountName>
+                "Dimitrija";
+        <http://xmlns.com/foaf/0.1/birthday>
+                "20001129";
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Timeski";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Dimitrija";
+        <http://xmlns.com/foaf/0.1/knows>
+                <https://github.com/DimeJovanovski>;
+        <http://xmlns.com/foaf/0.1/name>
+                "Dimitrija Timeski" .
