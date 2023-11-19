@@ -1,0 +1,24 @@
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix dbo: <http://dbpedia.org/ontology/>
+prefix dbp: <http://dbpedia.org/property/>
+prefix schema: <http://schema.org/>
+
+SELECT ?loddrug ?name ?abstract ?label ?tradename ?comment ?link
+WHERE {
+    GRAPH <http://linkeddata.finki.ukim.mk/lod/data/drugs#> {  # FROM == GRAPH
+            <https://lekovi.zdravstvo.gov.mk/drugsregister/detailview/56589>
+            schema:name ?name ; rdfs:seeAlso ?loddrug .
+    }
+    SERVICE <http://dbpedia.org/sparql> {
+        ?loddrug dbo:abstract ?abstract ;
+                 rdfs:label ?label ;
+                 dbp:tradename ?tradename ;
+                 rdfs:comment ?comment ;
+                 dbo:wikiPageExternalLink ?link .
+        FILTER (langMatches(lang(?abstract), "en"))
+        FILTER (langMatches(lang(?label), "en"))
+        FILTER (langMatches(lang(?comment), "en"))
+    }
+}
+
+# http://linkeddata.finki.ukim.mk/sparql

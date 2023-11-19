@@ -1,0 +1,37 @@
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix dbo: <http://dbpedia.org/ontology/>
+prefix dbp: <http://dbpedia.org/property/>
+prefix schema: <http://schema.org/>
+
+CONSTRUCT {
+  <https://lekovi.zdravstvo.gov.mk/drugsregister/detailview/56589> schema:name ?name ;
+      rdfs:seeAlso ?loddrug ;
+      dbo:abstract ?abstract ;
+      rdfs:label ?label ;
+      dbp:tradename ?tradename ;
+      rdfs:comment ?comment ;
+      rdfs:seeAlso ?link .
+}
+WHERE {
+  SERVICE <http://linkeddata.finki.ukim.mk/sparql>{
+  GRAPH <http://linkeddata.finki.ukim.mk/lod/data/drugs#> {
+      <https://lekovi.zdravstvo.gov.mk/drugsregister/detailview/56589> schema:name ?name ;
+               rdfs:seeAlso ?loddrug .
+  }}
+  SERVICE <http://dbpedia.org/sparql> {
+      ?loddrug dbo:abstract ?abstract ;
+               rdfs:label ?label ;
+               dbp:tradename ?tradename ;
+               rdfs:comment ?comment ;
+               dbo:wikiPageExternalLink ?link .
+      FILTER (langMatches(lang(?abstract), "en"))
+      FILTER (langMatches(lang(?label), "en"))
+      FILTER (langMatches(lang(?comment), "en"))
+  }
+}
+
+# arq.bat --query ex17_local_federatedQuery_4_Construct.sparql
+
+# THIS ALSO WORKS LOCALY
+# It's because we wrapped the query in a SERVICE clause
+# The service clause is used to query a remote SPARQL endpoint

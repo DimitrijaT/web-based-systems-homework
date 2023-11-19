@@ -1,0 +1,15 @@
+prefix dbo: <http://dbpedia.org/ontology/>
+
+ASK
+where {
+<http://dbpedia.org/resource/Linked_Data> dbo:abstract ?abstract .
+}
+
+# The result of an ASK query is always a Boolean (true or false)
+
+# doesn't work
+
+#https://dbpedia.org/sparql
+
+# result:
+#https://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=prefix+dbo%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0D%0A%0D%0AASK%0D%0Awhere+%7B%0D%0A%3Chttp%3A%2F%2Fdbpedia.org%2Fresource%2FLinked_Data%3E+dbo%3Aabstract+%3Fabstract+.%0D%0A%7D%0D%0A&format=text%2Fturtle&timeout=10000&signal_void=on&signal_unconnected=on

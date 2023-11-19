@@ -1,0 +1,14 @@
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+
+INSERT DATA
+{
+<http://linkeddatadeveloper.com/> dc:title "Linked Data" ;
+    dc:creator "David Wood" ;
+    dc:creator "Marcelo Arenas" ;
+    dc:creator "Jeen Broekstra" ;
+    dc:creator "Pablo Mendes" ;
+}
+
+# An update such as an INSERT operation may only be used on a SPARQL 1.1. endpoint that you have write permission to.
+
+# doesn't work

@@ -1,0 +1,12 @@
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+
+select ?name ?url
+from <http://3roundstones.com/dave/me.rdf>
+from <http://www.bosatsu.net/foaf/brian.rdf>
+where{
+    ?person rdfs:seeAlso ?url ;
+            foaf:name ?name .
+}
+
+# arq.bat --query ex5_livefoaf2.sparql

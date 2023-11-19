@@ -1,0 +1,12 @@
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+
+select ?name ?url
+where {
+    ?person rdfs:seeAlso ?url ;
+            foaf:name ?name .
+}
+
+# arq.bat --query ex2_foaf.sparql --data me.rdf
+
+# The result we get is in the form of a table.

@@ -1,0 +1,246 @@
+<?xml version="1.0"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:bio="http://purl.org/vocab/bio/0.1/"
+      xmlns:dct="http://purl.org/dc/terms/"
+      xmlns:contact="http://www.w3.org/2000/10/swap/pim/contact#"
+      xmlns:air="http://www.daml.org/2001/10/html/airport-ont#"
+      xmlns:wn="http://xmlns.com/wordnet/1.6/" 
+      xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
+      xmlns:pos="http://www.w3.org/2003/01/geo/wgs84_pos#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/">
+<foaf:PersonalProfileDocument rdf:about="http://3roundstones.com/dave/me.ttl#me">
+  <foaf:maker rdf:nodeID="me"/>
+  <foaf:primaryTopic rdf:nodeID="me"/>
+</foaf:PersonalProfileDocument>
+  <foaf:Person rdf:about="http://3roundstones.com/dave/#me">
+  <foaf:name>David Wood</foaf:name>
+  <foaf:title>Dr.</foaf:title>
+  <foaf:givenname>David</foaf:givenname>
+  <foaf:family_name>Wood</foaf:family_name>
+  <foaf:nick>prototypo</foaf:nick>
+	<bio:olb>American; married with kids; technical architect; CTO of 3 Round Stones Inc; W3C Working Group chair (RDF, Semantic Web Best Practices and Deployment); author of Programming Internet Email, editor of Linking Enterprise Data and Linking Government Data; Semantic Web geek</bio:olb>
+  <!-- 3 Round Stones: -->
+  <foaf:mbox_sha1sum>abe8c5daaf522b41c7550a48360be9379e59db2c</foaf:mbox_sha1sum>
+  <!-- Hyland-Wood.org -->
+  <foaf:mbox_sha1sum>9c9fdc1be930ecd51b09983f283c86e8d7923543</foaf:mbox_sha1sum>
+  <!-- Mobile Me: -->
+  <foaf:mbox_sha1sum>528c81e696c87cc8b38c8a3ced19ef594f4466e7</foaf:mbox_sha1sum>
+  <!-- UQ: -->
+  <foaf:mbox_sha1sum>ba79c54bba3ed9834f0bd46efa58619944cb306b</foaf:mbox_sha1sum>
+  <!-- UMW: -->
+  <foaf:mbox_sha1sum>60295e592f9c99ffded2df503aa26e53a11eee3e</foaf:mbox_sha1sum>
+	<foaf:openid rdf:resource="http://prototypo.myopenid.com/"/>
+  <foaf:homepage rdf:resource="http://prototypo.blogspot.com/"/>
+  <foaf:depiction rdf:resource="http://www.itee.uq.edu.au/~dwood/images/dave_w_0.jpg"/>
+  <foaf:phone rdf:resource="tel:+1.540.538.9137"/>
+  <foaf:workplaceHomepage rdf:resource="http://3roundstones.com/"/>
+  <foaf:workInfoHomepage rdf:resource="http://3roundstones.com/dave"/>
+  <foaf:schoolHomepage rdf:resource="http://www.vmi.edu/"/>
+  <foaf:schoolHomepage rdf:resource="http://www.nps.navy.mil/"/>
+  <foaf:schoolHomepage rdf:resource="http://www.itee.uq.edu.au/"/>
+  <foaf:aimChatID>piprototypo</foaf:aimChatID>
+	<foaf:account>
+		<foaf:OnlineAccount>
+			<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/OnlineChatAccount"/>
+			<foaf:accountServiceHomepage rdf:resource="http://www.freenode.net/"/>
+			<foaf:accountName>prototypo</foaf:accountName>
+		</foaf:OnlineAccount>
+	</foaf:account>
+	<foaf:account>
+		<foaf:OnlineAccount>
+			<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/OnlineChatAccount"/>
+			<foaf:accountServiceHomepage rdf:resource="http://www.twitter.com/"/>
+			<foaf:accountName>prototypo</foaf:accountName>
+		</foaf:OnlineAccount>
+	</foaf:account>
+	<foaf:account>
+		<foaf:OnlineAccount>
+			<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/OnlineChatAccount"/>
+			<foaf:accountServiceHomepage rdf:resource="http://irc.w3.org/"/>
+			<foaf:accountName>davidwood</foaf:accountName>
+		</foaf:OnlineAccount>
+	</foaf:account>
+	<foaf:account>
+		<foaf:OnlineAccount>
+			<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/OnlineChatAccount"/>
+			<foaf:accountServiceHomepage rdf:resource="http://messenger.yahoo.com/"/>
+			<foaf:accountName>prototypo</foaf:accountName>
+		</foaf:OnlineAccount>
+	</foaf:account>
+  <foaf:account>
+    <foaf:OnlineAccount>
+		  <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/OnlineChatAccount"/>
+		  <foaf:accountServiceHomepage rdf:resource="http://www.google.com/talk/"/>
+		  <foaf:accountName>piprototypo</foaf:accountName>
+	  </foaf:OnlineAccount>
+  </foaf:account>
+  <foaf:weblog dc:title="Vowel Movement" rdf:resource="http://prototypo.blogspot.com"/>
+	
+  <foaf:interest rdf:resource="http://dbpedia.org/resource/Linked_Data" dc:title="Linked Data"/>
+  <foaf:interest>
+    <rdf:Description rdf:about="http://dbpedia.org/page/Resource_Description_Framework" dc:title="Resource Description Framework (RDF)"/>
+  </foaf:interest>
+  <foaf:interest>
+    <rdf:Description rdf:about="http://dbpedia.org/page/Metadata" dc:title="Metadata"/>
+  </foaf:interest>
+  <foaf:interest>
+    <rdf:Description rdf:about="http://dbpedia.org/resource/Semantic_Web" dc:title="Semantic Web"/>
+  </foaf:interest>
+  <foaf:interest>
+    <rdf:Description rdf:about="http://dbpedia.org/page/History_of_agriculture" dc:title="Origin of Agriculture"/>
+  </foaf:interest>
+  <foaf:interest>
+    <rdf:Description rdf:about="http://dbpedia.org/page/Software_metric" dc:title="Software Metrics"/>
+  </foaf:interest>
+  <foaf:interest>
+    <rdf:Description rdf:about="http://dbpedia.org/page/Meme" dc:title="Theory of Memes"/>
+  </foaf:interest>
+  <foaf:knows>
+    <foaf:Person>
+    <foaf:name>Jim Hendler</foaf:name>
+    <foaf:mbox_sha1sum>be972c7a602683f7cf3c7a1fd0949c565debe4d3</foaf:mbox_sha1sum>
+    <rdfs:seeAlso rdf:resource="http://www.cs.umd.edu/~hendler/"/></foaf:Person></foaf:knows>
+  <foaf:knows>
+    <foaf:Person>
+    <foaf:name>Brian Sletten</foaf:name>
+    <foaf:mbox_sha1sum>6de5a032a9459ec947c8f54b3e5f54a6e60b7a29</foaf:mbox_sha1sum>
+    <rdfs:seeAlso rdf:resource="http://www.bosatsu.net/foaf/brian.rdf"/></foaf:Person></foaf:knows>
+  <foaf:knows>
+    <foaf:Person>
+    <foaf:name>Darren Govoni</foaf:name>
+    <foaf:mbox_sha1sum>e2e4b6ef50720b3aef309d7726932052e4a34e6c</foaf:mbox_sha1sum>
+    <rdfs:seeAlso rdf:resource="http://ontrenet.com/"/></foaf:Person></foaf:knows>
+  <foaf:knows>
+    <foaf:Person>
+    <foaf:name>Paul Gearon</foaf:name>
+    <foaf:mbox_sha1sum>9ad97b1210160f66f7d2994c1487eb87965a99aa</foaf:mbox_sha1sum>
+    <rdfs:seeAlso rdf:resource="http://gearon.blogspot.com/"/></foaf:Person></foaf:knows>
+  <foaf:knows>
+    <foaf:Person>
+    <foaf:name>Andrae Muys</foaf:name>
+    <foaf:mbox_sha1sum>6965f3cd97f70281d4ef4d9f0218751d0387bcaf</foaf:mbox_sha1sum>
+    <rdfs:seeAlso rdf:resource="http://etymon.blogspot.com/"/></foaf:Person></foaf:knows>
+  <foaf:knows>
+    <foaf:Person>
+    <foaf:name>Libby Miller</foaf:name>
+    <foaf:mbox_sha1sum>80f78952ba7c71bc9a0a38de415692922a3f6024</foaf:mbox_sha1sum>
+    <rdfs:seeAlso rdf:resource="http://swordfish.rdfweb.org/people/libby/rdfweb/webwho.xrdf"/></foaf:Person></foaf:knows>
+  <foaf:knows>
+    <foaf:Person>
+    <foaf:name>Dan Connolly</foaf:name>
+    <foaf:mbox_sha1sum>94b6eb0c835f928c5ed565dc3ed1a355ac1b41e5</foaf:mbox_sha1sum>
+    <rdfs:seeAlso rdf:resource="http://www.w3.org/People/Connolly/"/></foaf:Person></foaf:knows>
+  <foaf:knows>
+    <foaf:Person>
+    <foaf:name>Tim Berners-Lee</foaf:name>
+    <foaf:mbox_sha1sum>965c47c5a70db7407210cef6e4e6f5374a525c5c</foaf:mbox_sha1sum>
+    <rdfs:seeAlso rdf:resource="http://www.w3.org/People/Berners-Lee/"/></foaf:Person></foaf:knows>
+  <foaf:knows>
+    <foaf:Person>
+    <foaf:name>Dan Brickley</foaf:name>
+    <foaf:mbox_sha1sum>362ce75324396f0aa2d3e5f1246f40bf3bb44401</foaf:mbox_sha1sum>
+    <rdfs:seeAlso rdf:resource="http://rdfweb.org/people/danbri/rdfweb/danbri-foaf.rdf"/></foaf:Person></foaf:knows>
+  <foaf:knows>
+    <foaf:Person>
+    <foaf:name>Danny Weitzner</foaf:name>
+    <foaf:mbox_sha1sum>032c319f439f63efba54f4fa51bfb3a3fafedfbe</foaf:mbox_sha1sum>
+    <rdfs:seeAlso rdf:resource="http://www.w3.org/People/Weitzner.html"/></foaf:Person></foaf:knows>
+  <foaf:knows>
+    <foaf:Person>
+    <foaf:name>Ralph Swick</foaf:name>
+    <foaf:mbox_sha1sum>7bcd7c01107279388a475875374988e51fb0ca6d</foaf:mbox_sha1sum>
+    <rdfs:seeAlso rdf:resource="http://www.w3.org/People/all#swick"/></foaf:Person></foaf:knows>
+  <foaf:knows>
+    <foaf:Person>
+    <foaf:name>Bernadette Hyland</foaf:name>
+    <foaf:mbox_sha1sum>197723a670964369030db8f267461e85e554f334</foaf:mbox_sha1sum>
+    <rdfs:seeAlso rdf:resource="http://3roundstones.com/about-us/leadership-team/bernadette-hyland/"/></foaf:Person></foaf:knows>
+  <foaf:knows>
+    <foaf:Person>
+    <foaf:name>Simon Kaplan</foaf:name>
+    <foaf:mbox_sha1sum>e974c655c0e2f2eb5e53e75d2bf8e15831f8064d</foaf:mbox_sha1sum>
+    <rdfs:seeAlso rdf:resource="http://www.handbook.qut.edu.au/courses/it/staff.jsp"/></foaf:Person></foaf:knows>
+  <foaf:knows>
+    <foaf:Person>
+    <foaf:name>Dave Carrington</foaf:name>
+    <foaf:mbox_sha1sum>31334aba43dab2a781cf87fc277eba3788aba3d8</foaf:mbox_sha1sum>
+    <rdfs:seeAlso rdf:resource="http://www.itee.uq.edu.au/people/staff/davec.html"/></foaf:Person></foaf:knows>
+  <foaf:knows>
+    <foaf:Person>
+    <foaf:name>David Jericho</foaf:name>
+    <foaf:mbox_sha1sum>0a4384f53d63623f0ad110895353e0322203c87e</foaf:mbox_sha1sum>
+    <rdfs:seeAlso rdf:resource="http://diskpig.org/blog"/></foaf:Person></foaf:knows>
+  <foaf:knows>
+    <foaf:Person>
+    <foaf:name>Jason Parker-Burlingham</foaf:name>
+    <foaf:mbox_sha1sum>21c0fa416d36aa5794802da8a7580ddad9aae9da</foaf:mbox_sha1sum>
+    <rdfs:seeAlso rdf:resource="http://www.livejournal.com/users/nooks/"/></foaf:Person>
+  </foaf:knows>
+  <foaf:knows>
+    <foaf:Person>
+    <foaf:name>Michael Hausenblas</foaf:name>
+    <foaf:mbox_sha1sum>5268ce5bb6a230b787fec1c9207c4d57694eb134</foaf:mbox_sha1sum>
+    <rdfs:seeAlso rdf:resource="http://semanticweb.org/wiki/Special:ExportRDF/Michael_Hausenblas"/>
+    <foaf:based_near rdf:resource="http://3roundstones.com/LDBook/MHLocation" pos:lat="53.2711" pos:long="-9.0566" />
+    </foaf:Person>
+  </foaf:knows>
+  <foaf:knows>
+    <foaf:Person>
+    <foaf:name>Eric Miller</foaf:name>
+    <foaf:mbox rdf:resource="mailto:em@zepheira.com"/>
+    <rdfs:seeAlso rdf:resource="http://zepheira.com/team/eric/#me"/>
+    </foaf:Person>
+  </foaf:knows>
+  <foaf:knows>
+    <foaf:Person>
+    <foaf:name>Chris Sukornyk</foaf:name>
+    <foaf:mbox_sha1sum>5354e2778494d56a99833af81988c11e0e86337c</foaf:mbox_sha1sum>
+    <rdfs:seeAlso rdf:resource="http://www.semaview.com/foaf/chris.rdf"/></foaf:Person>
+  </foaf:knows>
+  <foaf:knows>
+    <foaf:Person>
+  	<foaf:name>Ian Davis</foaf:name>
+	<foaf:mbox_sha1sum>d71e3599f541bc3a284a19be6bac9e9458dc5fbb</foaf:mbox_sha1sum>
+	<rdfs:seeAlso rdf:resource="http://iandavis.com/id/me"/>
+    </foaf:Person>
+  </foaf:knows>
+  <foaf:knows>
+    <foaf:Person>
+	  <foaf:name>Tom Heath</foaf:name>
+	  <foaf:mbox_sha1sum>a7732ff3415164237856025836a44409e9dcf203</foaf:mbox_sha1sum>
+	  <rdfs:seeAlso rdf:resource="http://tomheath.com/id/me"/>
+    </foaf:Person>
+  </foaf:knows>
+  <foaf:based_near>
+	  <pos:Point>
+	    <pos:lat>38.300</pos:lat>
+	    <pos:long>-77.466</pos:long>
+	  </pos:Point>
+  </foaf:based_near>
+  <contact:nearestAirport> 
+	  <wn:Airport>
+	    <air:name>Ronald Reagan Washington National Airport</air:name>
+	    <air:iataCode>DCA</air:iataCode>
+	    <air:icaoCode>KDCA</air:icaoCode>
+	    <air:sameIndividualAs rdf:resource="http://www.daml.org/cgi-bin/airport?DCA"/>
+	    <air:location>Arlington, Virginia, United States</air:location>
+	    <air:latitude>38.85</air:latitude>
+	    <air:longitude>-77.033333333333</air:longitude>
+	   </wn:Airport>
+  </contact:nearestAirport>
+</foaf:Person>
+<rdf:Description rdf:about="http://3roundstones.com/dave/me.rdf">
+  <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+  <rdf:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+  <foaf:primaryTopic rdf:resource="http://3roundstones.com/dave/me"/>
+  <dct:title>Linked Data for David Wood</dct:title>
+  <dct:title>Linked Data in RDF/XML format for David Wood</dct:title>
+  <dct:hasFormat rdf:resource="http://3roundstones.com/dave/me.rdf"/>
+  <dct:isFormatOf rdf:resource="http://3roundstones.com/dave/me.rdf"/>
+  <dct:format>application/rdf+xml</dct:format>
+</rdf:Description>
+</rdf:RDF>

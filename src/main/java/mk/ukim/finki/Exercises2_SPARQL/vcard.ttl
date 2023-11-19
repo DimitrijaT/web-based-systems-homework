@@ -1,0 +1,14 @@
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+@base <http://3roundstones.com/dave/>
+
+<#me> vcard:adr <#address> .
+
+<#address> a vcard:Word
+    ; rdfs:label "3 Round Stones, Inc."
+    ; vcard:street-address "1776 Massachusetts Ave NW, Suite 815"
+    ; vcard:locality "Washington"
+    ; vcard:region "DC"
+    ; vcard:postal-code "20036"
+    ; vcard:country-name "USA"
+.

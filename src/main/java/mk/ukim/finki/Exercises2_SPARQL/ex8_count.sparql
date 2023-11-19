@@ -1,0 +1,13 @@
+prefix dbo: <https://dbpedia.org/ontology/>
+
+select ?abstract
+where {
+    <http://dbpedia.org/resource/Linked_Data> dbo:abstract ?abstract .
+}
+
+# This example counts the number of abstracts for DBpedia’s Linked_Data resource. 
+
+# arq.bat --query ex8_count.sparql
+
+# doesn't work
+

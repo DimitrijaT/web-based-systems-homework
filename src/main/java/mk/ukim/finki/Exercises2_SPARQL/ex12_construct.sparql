@@ -1,0 +1,15 @@
+
+# CONSTRUCT query makes a new RDF graph using variables from the WHERE clause
+CONSTRUCT {
+    <http://dbpedia.org/resource/Linked_Data> ?predicate ?object . # CONSTRUCT clause components use variables that are bound in the WHERE clause
+}
+
+# WHERE clause determines which variables may be used in the CONSTRUCT clause
+WHERE {
+    <http://dbpedia.org/resource/Linked_Data> ?predicate ?object .
+    FILTER ( lang(?object) = "en" )
+}
+
+# doesn't work
+
+

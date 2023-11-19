@@ -1,0 +1,12 @@
+describe <http://dbpedia.org/resource/Linked_Data>
+
+
+# DESCRIBE is a SPARQL query that returns an RDF graph !!!
+
+# SPARQL processors return all RDF triples for which the DESCRIBE’s URI parameter is the subject
+
+# WORKS
+# https://dbpedia.org/sparql
+
+# Doesn't work
+# https://www.orpha.net/sparql

@@ -1,0 +1,9 @@
+We put them in either INSIDE the Where clause or AFTER the Where clause.
+
+FILTER (?courseName = "WBS")
+FILTER (?grade > 5)
+FILTER (?year > 2010 && ?year < 2015)
+FILTER regex(?name, "*Smith")
+FILTER (lang(?description) = "en")
+FILTER regex(?name, "Cooper")
+FILTER NOT EXISTS { ?person foaf:name ?name }

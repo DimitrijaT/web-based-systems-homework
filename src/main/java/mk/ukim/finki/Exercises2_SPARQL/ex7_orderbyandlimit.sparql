@@ -1,0 +1,13 @@
+select ?link
+where {
+    <http://dbpedia.org/resource/Linked_Data>
+        <http://dbpedia.org/ontology/wikiPageExternalLink> ?link .
+} ORDER BY ?link LIMIT 10
+
+# The URLs will be ordered alphabetically
+# Limits the results to 10 records
+
+
+# arq.bat --query ex7_orderbyandlimit.sparql
+
+# doesn't work

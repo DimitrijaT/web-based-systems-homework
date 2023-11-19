@@ -1,0 +1,5 @@
+https://dbpedia.org/sparql
+
+https://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=select+distinct+%3FConcept+where+%7B%5B%5D+a+%3FConcept%7D+LIMIT+100%0D%0A&format=text%2Fx-html%2Btr&timeout=30000&signal_void=on&signal_unconnected=on
+
+arq.bat --query foafoptional.rq --data me.rdf

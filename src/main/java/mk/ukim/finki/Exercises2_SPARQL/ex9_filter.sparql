@@ -1,0 +1,10 @@
+prefix dbo: <https://dbpedia.org/ontology/>
+
+select ?abstract
+where {
+    <http://dbpedia.org/resource/Linked_Data> dbo:abstract ?abstract .
+    FILTER (lang(?abstract) = 'en')
+}
+
+
+# doesn't work

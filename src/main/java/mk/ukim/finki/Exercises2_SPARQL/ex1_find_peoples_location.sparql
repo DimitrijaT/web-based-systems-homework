@@ -1,0 +1,25 @@
+# Namespace prefixes.
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+prefix pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+
+select ?name ?latitude ?longitude  # Requesting three fields be retrieved
+
+# Results will be retrieved from two sources
+from <http://3roundstones.com/dave/me.rdf>
+from <http://semanticweb.org/wiki/Special:ExportRDF/Michael_Hausenblas>  # This link is DOWN
+
+where{
+# Items preceded by ? represent variables in the results
+# Criteria described in the form of a triple patern
+    ?person foaf:name ?name ;
+            foaf:based_near ?near .
+    ?near pos:lat ?latitude ;
+          pos:long ?longitude .
+}
+LIMIT 10 # Only the first 10 results will be returned
+
+# The triple patterns are in logical AND relationship
+# If we know a person but his near value doesn't have a lat and long then it will be excluded from the results
+
+
+# The link doesn't work, this code is just an example

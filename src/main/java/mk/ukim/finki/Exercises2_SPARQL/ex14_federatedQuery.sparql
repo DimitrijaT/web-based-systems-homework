@@ -1,0 +1,12 @@
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+SELECT ?name
+FROM <http://example.org/myfoaf.rdf>
+WHERE {
+    <http://example.org/myfoaf.rdf#me> foaf:knows ?person .  # Find people in the local graph people I know
+    SERVICE <http://people.example.org/sparql> { # Then query a remote SPARQL endpoint for those people's names
+        ?person foaf:name ?name .
+    }
+}
+
+# The SERVICE keyword instructs a federated query processor to
+# invoke a portion of a SPARQL query against a remote SPARQL endpoint.

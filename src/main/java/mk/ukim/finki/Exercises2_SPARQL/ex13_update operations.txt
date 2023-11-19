@@ -1,0 +1,11 @@
+delete triples from a graph (DELETE),
+load the contents of a URL into a graph (LOAD),
+remove all the triples from a graph (CLEAR),
+create a graph (CREATE),
+remove a graph (DROP),
+copy all of the data from one graph to another (COPY),
+this will first remove any existing data from the destination graph;
+move all data from one graph to another (MOVE),
+this will empty the source graph;
+copy data from a source graph to a destination graph, without
+removing content from the source or destination (ADD).

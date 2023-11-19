@@ -1,0 +1,12 @@
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+prefix vcard: <http://www.w3.org/2006/vcard/ns#>
+
+SELECT ?name ?city ?state
+where{
+    ?person foaf:name ?name ;
+        vcard:adr ?address .
+    ?address vcard:locality ?city ;
+        vcard:region ?state .
+}
+
+# arq.bat --query ex3_foafvcard.sparql --data me.rdf --data vcard.ttl
