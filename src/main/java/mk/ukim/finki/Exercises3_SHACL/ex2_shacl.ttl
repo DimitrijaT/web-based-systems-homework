@@ -1,0 +1,33 @@
+@prefix sh:     <http://www.w3.org/ns/shacl#> .
+@prefix schema: <http://schema.org/> .
+@prefix ex:     <http://www.example.com> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+
+ex:PersonShape
+    a              sh:NodeShape ;
+    sh:targetClass schema:Person ;
+    sh:nodeKind    sh:IRI ;
+    sh:property    ex:HasEmail ;
+    sh:property    ex:HasGender ;
+    sh:property    ex:MaybeBirthDate ;
+    sh:property    ex:KnowsUsers .
+
+ex:HasEmail
+    sh:path     schema:name ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:datatype xsd:string .
+ex:HasGender
+    sh:path     schema:gender ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:or       ( [ sh:in ( schema:Male schema:Female ) ] [ sh:datatype xsd:string ] ) .
+
+ex:MaybeBirthDate
+    sh:path     schema:birthDate ;
+    sh:maxCount 1 ;
+    sh:datatype xsd:date .
+
+ex:KnowsUsers
+    sh:path  schema:knows ;
+    sh:class schema:Person .

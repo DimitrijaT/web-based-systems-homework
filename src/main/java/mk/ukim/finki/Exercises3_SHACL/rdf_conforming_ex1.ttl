@@ -1,0 +1,23 @@
+@prefix sh:     <http://www.w3.org/ns/shacl#> .
+@prefix schema: <http://schema.org/> .
+@prefix ex:     <http://www.example.com> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:   <http://xmlns.com/foaf/0.1/> .
+
+ex:Alice
+    a             schema:Person ;
+    schema:name   "Alice" ;
+    schema:gender schema:Female ;
+    schema:knows  ex:Bob .
+
+ex:Bob
+    a                schema:Person ;
+    schema:gender    schema:Male ;
+    schema:name      "Robert" ;
+    schema:birthDate "1980-03-10"^^xsd:date .
+
+ex:Carol
+    a             schema:Person ;
+    schema:name   "Carol" ;
+    schema:gender schema:Female ;
+    foaf:name     "Carol" .

@@ -1,0 +1,25 @@
+@prefix sh:     <http://www.w3.org/ns/shacl#> .
+@prefix schema: <http://schema.org/> .
+@prefix ex:     <http://www.example.com> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:   <http://xmlns.com/foaf/0.1/> .
+
+ex:Alice
+    a              schema:Person ;
+    schema:follows <mailto:alice@gmail.org> ;
+    schema:knows   ex:Bob, ex:Carol .
+
+ex:Bob
+    schema:email <mailto:bob@gmail.org> ;
+    schema:knows ex:Carol .
+
+ex:Carol
+    schema:email <mailto:carol@mail.com> .
+
+ex:Dave
+    a            schema:Person ;
+    schema:knows <mailto:dave@gmail.com> ;
+    schema:knows ex:Carol, ex:Emily .  # schema:knows has an schema:email that is not an IRI (ex:Emily)
+
+ex:Emily
+    schema:email "Unknown" .
