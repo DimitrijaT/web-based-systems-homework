@@ -1,9 +1,10 @@
-package mk.ukim.finki.homework_1.examples;
+package mk.ukim.finki.Examples;
 
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.util.FileManager;
 
+import java.io.IOException;
 import java.io.InputStream;
 
 public class Example3_ReadingRDF {
@@ -20,13 +21,19 @@ public class Example3_ReadingRDF {
         }
 
         // read the RDF/XML file
+        // The empty parameter can make all relative URI's in the file absolute
+        // Example: to transform "Teacher" to "http://example.com/Teacher"
+        // But because we don't want to do that, we pass an empty string
         model.read(in, "");
 
         // write it to standard out, in Turtle format
         model.write(System.out, "TTL"); // or "TURTLE"
 
-
-
+        try {
+            in.close();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
 
     }
 }

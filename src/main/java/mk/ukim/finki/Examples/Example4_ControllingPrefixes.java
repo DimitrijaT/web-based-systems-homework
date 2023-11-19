@@ -1,4 +1,4 @@
-package mk.ukim.finki.homework_1.examples;
+package mk.ukim.finki.Examples;
 
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;

@@ -1,4 +1,4 @@
-package mk.ukim.finki.homework_1.examples;
+package mk.ukim.finki.Examples;
 
 import org.apache.jena.rdf.model.*;
 import org.apache.jena.vocabulary.VCARD;
@@ -34,7 +34,7 @@ public class Example5_NavigatingAModel {
 
         // retrieve the value of the N property
         Resource name_2 = jSmithVcard.getProperty(VCARD.N)
-                .getResource();
+                .getResource(); // This returns the resource from the right side of the triple
 
         // retrieve the full name property
         String fullNameProperty = jSmithVcard.getProperty(VCARD.FN).getString();
@@ -70,17 +70,23 @@ public class Example5_NavigatingAModel {
             System.out.println("No vcards were found in the database");
 
 
-        // model.listStatements(Selector s)
+        queryingAModel(model);
 
+    }
+
+    private static void queryingAModel(Model model) {
+
+        // SimpleSelector(subject, predicate, object)
         Selector selector = new SimpleSelector(null, VCARD.FN, (String) null);
+
         StmtIterator sIter = model.listStatements(selector);
+
         if (sIter.hasNext()) {
             System.out.println("The database contains vcards for:");
             while (sIter.hasNext()) {
                 System.out.println("  " + sIter.nextStatement()
                         .getObject()
                         .toString());
-
             }
         } else {
             System.out.println("No vcards were found in the database");

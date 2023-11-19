@@ -1,4 +1,4 @@
-package mk.ukim.finki.homework_1;
+package mk.ukim.finki.Homework_1;
 
 import org.apache.jena.rdf.model.*;
 import org.apache.jena.util.FileManager;
@@ -11,7 +11,7 @@ import java.util.TreeMap;
 
 public class Main_3_OutsideData {
 
-    static String inputFileName = "C:\\Users\\dimit\\Documents\\7th Semester\\WBS_1_JenaRDFAPI_DimitrijaTimeski_203235\\WBS_1_JenaRDFAPI_DimitrijaTimeski_203235\\src\\main\\java\\mk\\ukim\\finki\\hifm-dataset.ttl";
+    static String inputFileName = "C:\\Users\\dimit\\Documents\\7th Semester\\WBS_1_JenaRDFAPI_DimitrijaTimeski_203235\\WBS_1_JenaRDFAPI_DimitrijaTimeski_203235\\src\\main\\java\\mk\\ukim\\finki\\Homework_1\\data\\hifm-dataset.ttl";
     static String drugbankPrefix = "http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/";
 
     static String hifmOntPrefix = "http://purl.org/net/hifm/ontology#";

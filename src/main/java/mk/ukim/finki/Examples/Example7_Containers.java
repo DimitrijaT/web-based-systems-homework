@@ -1,7 +1,9 @@
-package mk.ukim.finki.homework_1.examples;
+package mk.ukim.finki.Examples;
 
 import org.apache.jena.rdf.model.*;
 import org.apache.jena.vocabulary.VCARD;
+
+import java.sql.SQLOutput;
 
 public class Example7_Containers {
 
@@ -55,6 +57,10 @@ public class Example7_Containers {
         } else {
             System.out.println("The bag is empty");
         }
+
+
+        System.out.println("Print as Turtle:");
+        model.write(System.out, "TURTLE"); // or "TTL"
 
 
     }

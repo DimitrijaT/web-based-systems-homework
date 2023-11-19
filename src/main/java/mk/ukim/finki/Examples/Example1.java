@@ -1,4 +1,4 @@
-package mk.ukim.finki.homework_1.examples;
+package mk.ukim.finki.Examples;
 
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
@@ -11,7 +11,7 @@ public class Example1 {
         String personURI = "https://plus.google.com/+JohnSmith";
         String fullName = "John Smith";
 
-        Model model = ModelFactory.createDefaultModel();
+        Model model = ModelFactory.createDefaultModel(); // The model is the RDF graph
         Resource johnSmith = model.createResource(personURI);
 
         johnSmith.addProperty(VCARD.FN, fullName);

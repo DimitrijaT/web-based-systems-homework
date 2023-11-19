@@ -1,4 +1,4 @@
-package mk.ukim.finki.homework_1;
+package mk.ukim.finki.Homework_1;
 
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
@@ -11,10 +11,7 @@ import java.io.InputStream;
 
 public class Main_2_Read {
 
-    static final String inputFileName = "C:\\Users\\dimit\\" +
-            "Documents\\7th Semester\\WBS_1_JenaRDFAPI_DimitrijaTimeski_203235\\" +
-            "WBS_1_JenaRDFAPI_DimitrijaTimeski_203235\\src\\main\\java\\mk\\" +
-            "ukim\\finki\\data.xml";
+    static final String inputFileName = "C:\\Users\\dimit\\Documents\\7th Semester\\WBS_1_JenaRDFAPI_DimitrijaTimeski_203235\\WBS_1_JenaRDFAPI_DimitrijaTimeski_203235\\src\\main\\java\\mk\\ukim\\finki\\Homework_1\\data\\data.xml";
 
     public static void main(String[] args) {
         // create an empty model

@@ -1,4 +1,4 @@
-package mk.ukim.finki.homework_1;
+package mk.ukim.finki.Homework_1;
 
 import org.apache.jena.rdf.model.*;
 import org.apache.jena.sparql.vocabulary.FOAF;

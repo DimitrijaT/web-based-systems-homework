@@ -13,5 +13,12 @@
         <maven.compiler.target>20</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-    
+    <dependencies>
+<!--        <dependency>-->
+<!--            <groupId>org.apache.jena</groupId>-->
+<!--            <artifactId>apache-jena-libs</artifactId>-->
+<!--            <type>pom</type>-->
+<!--            <version>X.Y.Z</version>-->
+<!--        </dependency>-->
+    </dependencies>
 </project>

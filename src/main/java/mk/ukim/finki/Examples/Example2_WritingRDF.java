@@ -1,4 +1,4 @@
-package mk.ukim.finki.homework_1.examples;
+package mk.ukim.finki.Examples;
 
 import org.apache.jena.rdf.model.*;
 import org.apache.jena.vocabulary.VCARD;
@@ -17,10 +17,11 @@ public class Example2_WritingRDF {
         Model model = ModelFactory.createDefaultModel();
 
         // create the resource and add the properties cascading style
+        // VCARD.N's range is a composite of VCARD.Given and VCARD.Family
         Resource johnSmith =
                 model.createResource(personURI)
                         .addProperty(VCARD.FN, fullName)
-                        .addProperty(VCARD.N, model.createResource()
+                        .addProperty(VCARD.N, model.createResource() // nested blank node
                                 .addProperty(VCARD.Given, givenName)
                                 .addProperty(VCARD.Family, familyName));
 
@@ -29,22 +30,24 @@ public class Example2_WritingRDF {
         Property predicate = null;
         RDFNode object = null;
 
+        // list the statements in the graph
         StmtIterator iter = model.listStatements();
 
         while (iter.hasNext()) {
-            stmt = iter.nextStatement(); // get next statement
-            subject = stmt.getSubject(); // get the subject
-            predicate = stmt.getPredicate(); // get the predicate
-            object = stmt.getObject(); // get the object
+            stmt = iter.nextStatement();        // get next statement
+            subject = stmt.getSubject();        // get the subject (S)
+            predicate = stmt.getPredicate();    // get the predicate (P)
+            object = stmt.getObject();          // get the object (O) Either a Resource or a Literal
 
+            // print the subject
             System.out.print(subject.toString());
+
+            // print the predicate
             System.out.print(" " + predicate.toString() + " ");
-            if (object instanceof Resource) {
-                System.out.print(object.toString());
-            } else {
-                // object is a literal
-                System.out.print(" \"" + object.toString() + "\"");
-            }
+
+            // print the object
+            if (object instanceof Resource) System.out.print(object.toString()); // object is a resource
+            else System.out.print(" \"" + object.toString() + "\""); // object is a literal
             System.out.println(" .");
         }
 
@@ -56,6 +59,7 @@ public class Example2_WritingRDF {
         System.out.println("Print as pretty RDF/XML:");
         model.write(System.out, "RDF/XML-ABBREV");
 
+        // Fully unpacked turtle, no abbreviations
         System.out.println("Print as N-TRIPLES:");
         model.write(System.out, "N-TRIPLES");
 

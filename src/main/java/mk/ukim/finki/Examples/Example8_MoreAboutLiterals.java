@@ -1,4 +1,4 @@
-package mk.ukim.finki.homework_1.examples;
+package mk.ukim.finki.Examples;
 
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
@@ -30,18 +30,18 @@ public class Example8_MoreAboutLiterals {
         // create the resource
         r = model.createResource("http://dbpedia.org/resource/Eleven");
 
-        // add the rdfs:label properties
+        // 1. add the rdfs:label properties
         r.addLiteral(RDFS.label, "11")
                 .addLiteral(RDFS.label, (float) 11);
 
-        // 1. write out the graph
+        // 2. write out the graph
         System.out.println("First print:");
         model.write(System.out, "TTL");
 
-        // add a new rdfs:label property
+        // 3. add a new rdfs:label property
         r.addProperty(RDFS.label, "11");
 
-        // 2. write out the graph, again
+        // 4. write out the graph, again
         System.out.println("Second print:");
         model.write(System.out, "TTL");
     }
